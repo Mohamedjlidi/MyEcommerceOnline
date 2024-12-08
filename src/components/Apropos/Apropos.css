@@ -1,0 +1,115 @@
+/* Styles généraux pour la page Apropos */
+.apropos {
+  font-family: 'Arial', sans-serif;
+  color: #333;
+  background-color: #f4f4f4;
+  padding: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.apropos-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.apropos-title {
+  font-size: 40px;
+  font-weight: bold;
+  color: #2c3e50;
+}
+
+.apropos-intro,
+.apropos-histoire,
+.apropos-mission {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.apropos-intro p,
+.apropos-histoire p,
+.apropos-mission p {
+  font-size: 18px;
+  line-height: 1.6;
+  color: #7f8c8d;
+  margin-bottom: 15px;
+}
+
+.apropos-histoire h2,
+.apropos-mission h2 {
+  font-size: 28px;
+  color: #f39c12;
+  margin-bottom: 15px;
+}
+
+.apropos-footer {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.apropos-cta {
+  font-size: 18px;
+  padding: 15px 30px;
+  background-color: #f39c12;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.apropos-cta:hover {
+  background-color: #e67e22; /* Changer la couleur au survol */
+}
+
+/* Ajouter des animations pour les sections */
+.apropos-intro,
+.apropos-histoire,
+.apropos-mission {
+  opacity: 0;
+  animation: fadeIn 1s forwards;
+}
+
+.apropos-intro {
+  animation-delay: 0.3s;
+}
+
+.apropos-histoire {
+  animation-delay: 0.6s;
+}
+
+.apropos-mission {
+  animation-delay: 0.9s;
+}
+
+/* Animation de fondu */
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+  .apropos {
+    padding: 20px;
+  }
+
+  .apropos-title {
+    font-size: 30px;
+  }
+
+  .apropos-intro p,
+  .apropos-histoire p,
+  .apropos-mission p {
+    font-size: 16px;
+  }
+
+  .apropos-cta {
+    font-size: 16px;
+    padding: 12px 25px;
+  }
+}

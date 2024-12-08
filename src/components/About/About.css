@@ -1,0 +1,104 @@
+/* Styles généraux pour la page About */
+.about {
+  font-family: 'Arial', sans-serif;
+  color: #333;
+  background-color: #f4f4f4;
+  padding: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.about-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.about-title {
+  font-size: 40px;
+  font-weight: bold;
+  color: #2c3e50;
+}
+
+.about-intro,
+.about-experience {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.about-description {
+  font-size: 18px;
+  line-height: 1.6;
+  color: #7f8c8d;
+  margin-bottom: 15px;
+}
+
+.about-experience h2 {
+  font-size: 28px;
+  color: #f39c12;
+  margin-bottom: 15px;
+}
+
+.about-footer {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.about-cta {
+  font-size: 18px;
+  padding: 15px 30px;
+  background-color: #f39c12;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.about-cta:hover {
+  background-color: #e67e22; /* Change la couleur au survol */
+}
+
+/* Ajouter des animations pour les sections */
+.about-intro,
+.about-experience {
+  opacity: 0;
+  animation: fadeIn 1s forwards;
+}
+
+.about-intro {
+  animation-delay: 0.3s;
+}
+
+.about-experience {
+  animation-delay: 0.6s;
+}
+
+/* Animation de fondu */
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+  .about {
+    padding: 20px;
+  }
+
+  .about-title {
+    font-size: 30px;
+  }
+
+  .about-description {
+    font-size: 16px;
+  }
+
+  .about-cta {
+    font-size: 16px;
+    padding: 12px 25px;
+  }
+}

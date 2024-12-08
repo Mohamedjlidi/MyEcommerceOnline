@@ -1,0 +1,159 @@
+/* Styles généraux pour le footer */
+.footer {
+    background-color: #403c3c; /* Couleur de fond similaire à celle du navbar */
+    color: #ECF0F1; /* Couleur du texte claire */
+    padding: 40px 50px;
+    font-family: 'Arial', sans-serif;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  /* Effet de survol pour le footer */
+  .footer:hover {
+    background-color: #34495E; /* Changement de couleur au survol */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2); /* Ombre portée au survol */
+  }
+  
+  .footer-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .footer-section {
+    flex: 1;
+    margin: 0 20px;
+  }
+  
+  .footer-section h4 {
+    font-size: 20px;
+    margin-bottom: 15px;
+    color: #a28959;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: color 0.3s ease;
+  }
+  
+  .footer-section h4:hover {
+    color: #E74C3C; /* Changement de couleur du titre au survol */
+  }
+  
+  .footer-section p, .footer-section ul {
+    font-size: 14px;
+    line-height: 1.6;
+  }
+  
+  .footer-section p a, .footer-section ul li a {
+    color: #ECF0F1;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .footer-section p a:hover, .footer-section ul li a:hover {
+    color: #E74C3C; /* Changement de couleur au survol des liens */
+  }
+  
+  .footer-section .social-icons {
+    display: flex;
+    gap: 15px;
+  }
+  
+  .footer-section .social-icons a img {
+    width: 30px;
+    height: 30px;
+    transition: transform 0.3s ease;
+  }
+  
+  .footer-section .social-icons a:hover img {
+    transform: scale(1.1); /* Agrandissement des icônes sociales au survol */
+  }
+  
+  /* Section footer-bottom */
+  .footer-bottom {
+    /* Fond sombre pour la section du bas */
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 20px;
+  }
+  
+  .footer-bottom p {
+    background-color: rgba(116, 68, 68, 0.225);
+    width: 35%;
+    font-size: 14px;
+    margin: 0 auto;
+  }
+  
+  .footer-bottom p a {
+    color: #ECF0F1;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+  
+  .footer-bottom p a:hover {
+    color: #E74C3C; /* Changement de couleur des liens au survol */
+    text-decoration: underline;
+  }
+  
+  /* Style pour les liens rapides */
+  .footer-section.links ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .footer-section.links ul li {
+    margin-bottom: 10px;
+  }
+  
+  .footer-section.links ul li a {
+    font-size: 16px;
+    transition: color 0.3s ease;
+  }
+  
+  .footer-section.links ul li a:hover {
+    color: #E74C3C; /* Changement de couleur des liens au survol */
+  }
+  
+  .footer-section.contact p a {
+    color: #ECF0F1;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .footer-section.contact p a:hover {
+    color: #E74C3C; /* Changement de couleur au survol */
+  }
+  
+  /* Styles des icônes de paiement */
+  .footer-section.payment .payment-icons {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .footer-section.payment .payment-icons img {
+    width: 40px;
+    height: auto;
+    transition: transform 0.3s ease;
+  }
+  
+  .footer-section.payment .payment-icons img:hover {
+    transform: scale(1.1); /* Agrandissement des icônes de paiement au survol */
+  }
+  
+  /* Section Nos services */
+  .footer-section.services ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .footer-section.services ul li {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  
+  .footer-section.services ul li::before {
+    content: "✔";
+    color: #E74C3C;
+    margin-right: 10px;
+  }
+  
