@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom'; // Importer Link de react-router-dom
+import { FaGithub } from 'react-icons/fa'; // Importer l'icône GitHub depuis react-icons
 import './Navbar.css';
 
 const Navbar = () => {
@@ -20,6 +21,12 @@ const Navbar = () => {
         <li><Link to="/Apropos">À Propos</Link></li> {/* Lien vers la page À propos */}
         <li><Link to="/Services">Services</Link></li> {/* Lien vers la page services */}
         <li><Link to="/Contact">Contact</Link></li> {/* Lien vers la page Contact */}
+        {/* Lien GitHub */}
+        <li>
+          <a href="https://github.com/MoJlidi5680/MyEcommerce" target="_blank" rel="noopener noreferrer">
+            <FaGithub size={30} /> {/* Affichage de l'icône GitHub */}
+          </a>
+        </li>
       </ul>
     </nav>
   );

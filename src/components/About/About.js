@@ -1,11 +1,12 @@
 import React from 'react';
-import './About.css'; // Assurez-vous d'ajouter ce fichier CSS pour styliser cette page
+import { Link } from 'react-router-dom'; // Importer Link pour la navigation
+import './About.css';
 
 const About = () => {
   return (
     <div className="about">
       <header className="about-header">
-        <h1 className="about-title">À propos de MyEcommerce</h1>
+        <h1 className="about-title">Accueil de MyEcommerce</h1>
       </header>
 
       <section className="about-intro">
@@ -23,7 +24,8 @@ const About = () => {
       </section>
 
       <footer className="about-footer">
-        <button className="about-cta">Explorez nos produits</button>
+        {/* Remplacer le bouton par un Link */}
+        <Link to="/products" className="about-cta">Explorez nos produits</Link>
       </footer>
     </div>
   );

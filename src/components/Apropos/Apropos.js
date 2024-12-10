@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom'; // Importer Link pour la navigation
 import './Apropos.css'; // Assurez-vous d'ajouter ce fichier CSS pour styliser cette page
 
 const Apropos = () => {
@@ -10,7 +11,7 @@ const Apropos = () => {
 
       <section className="apropos-intro">
         <p>
-          Chez MyEcommerce, nous sommes passionnés par les produits électroniques de qualité. Depuis notre création en 2021, notre objectif
+          Chez MyEcommerce, nous sommes passionnés par les produits électroniques de qualité. Notre objectif
           est de vous fournir une plateforme d'achat en ligne qui allie praticité, rapidité et fiabilité.
         </p>
       </section>
@@ -34,7 +35,8 @@ const Apropos = () => {
       </section>
 
       <footer className="apropos-footer">
-        <button className="apropos-cta">Explorez nos produits</button>
+        {/* Remplacer le bouton par un Link */}
+        <Link to="/products" className="apropos-cta">Explorez nos produits</Link>
       </footer>
     </div>
   );

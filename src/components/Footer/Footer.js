@@ -19,9 +19,9 @@ const Footer = () => {
         </div>
         <div className="footer-section contact">
           <h4>Contactez-nous</h4>
-          <p>Email: <a href="mailto:support@myecommerce.com">support@myecommerce.com</a></p>
-          <p>Téléphone: +33 123 456 789</p>
-          <p>Adresse: 123 Rue du Commerce, Paris, France</p>
+          <p>Email: <a href="mmohamed.jlidi.5680@gmail.com">mohamed.jlidi.5680@gmail.com</a></p>
+          <p>Téléphone: +216 50 130 813</p>
+          <p>Adresse: Gabes, Tunis</p>
         </div>
         <div className="footer-section social">
           <h4>Suivez-nous</h4>
@@ -45,7 +45,7 @@ const Footer = () => {
         </div>
       </div>
       <div className="footer-bottom">
-        <p>&copy; 2024 MyEcommerce. Tous droits réservés. | <Link to="/privacy-policy">Politique de confidentialité</Link></p>
+        <p>&copy; 2024 MyEcommerce By Mohamed Jlidi . Tous droits réservés. | <Link to="/privacy-policy">Politique de confidentialité</Link></p>
       </div>
     </footer>
   );

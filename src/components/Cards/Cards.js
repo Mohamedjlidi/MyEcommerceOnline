@@ -1,23 +1,17 @@
 import React from 'react';
+import Card from '../Card/Card'; // Assurez-vous du chemin correct
 import './Cards.css';
 
-const Cards = ({ products }) => {
+const Cards = ({ products, addToCart }) => {
   return (
     <div className='cards'>
       {products.length > 0 ? (
         products.map((product) => (
-          <div
-            key={product.id}
-           
-          >
-            <img
-              src={product.image}
-              alt={product.name}
-             
-            />
-            <h4>{product.name}</h4>
-            <p>{product.price.toFixed(2)} €</p>
-          </div>
+          <Card 
+            key={product.id} 
+            product={product} 
+            addToCart={addToCart} 
+          />
         ))
       ) : (
         <p>Aucun produit trouvé</p>

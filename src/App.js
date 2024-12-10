@@ -3,17 +3,15 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar/Navbar';
 import About from './components/About/About';
 import Contact from './components/Contact/Contact';
-import Dashboard from './components/Dashboard/Dashboard'; // Import Dashboard component
-import Apropos from './components/Apropos/Apropos'; // Corrected path for Apropos component
+import Dashboard from './components/Dashboard/Dashboard';
+import Apropos from './components/Apropos/Apropos';
 import Services from './components/Services/Services';
+import ProductModal from './components/ProductModal/ProductModal';
 import Footer from './components/Footer/Footer';
-
-
-
 
 const productsData = [
   { id: 1, name: 'iPhone 13', price: 799.99, image: 'https://img1.lemondeinformatique.fr/fichiers/telechargement/iphone-13-mini.jpeg' },
-  { id: 2, name: 'Samsung Galaxy S21', price: 749.99, image: 'https://spacenet.tn/45932-large_default/smartphone-samsung-galaxy-s21-plus-256go--8go--5g-violet.jpg' },
+  { id: 2, name: 'Samsung Galaxy S21', price: 749.99, image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCoTc1CuMEpwnmTPHT4SheJ_22Pms7Wa-m1w&s' },
   { id: 3, name: 'Sony WH-1000XM4', price: 349.99, image: 'https://pomme-z.be/wp-content/uploads/2024/01/macbook-air-13-pouce-m2.jpg' },
   { id: 4, name: 'MacBook Air', price: 999.99, image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQiouVRVhmknl2AjzF9HSC_Alro-3bmcK65iw&s' },
   { id: 5, name: 'Nintendo Switch', price: 299.99, image: 'https://assets.nintendo.com/image/upload/f_auto/q_auto/dpr_1.5/c_scale,w_400/ncom/en_US/products/hardware/nintendo-switch-red-blue/110478-nintendo-switch-neon-blue-neon-red-front-screen-on-1200x675' },
@@ -37,10 +35,11 @@ const App = () => {
           <Route path="/contact" element={<Contact />} />
           <Route path="/apropos" element={<Apropos />} />
           <Route path="/products" element={<Dashboard products={products} setProducts={setProducts} />} />
-          <Route path="/services" element={<Services />} /> {/* Ajouter la route pour la page des services */}
+          <Route path="/product/:id" element={<ProductModal products={products} />} />
+          <Route path="/services" element={<Services />} />
         </Routes>
       </div>
-      <Footer/>
+      <Footer />
     </Router>
   );
 };

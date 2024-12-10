@@ -81,3 +81,170 @@
   font-size: 16px;
   color: #777;
 }
+
+.cart-item {
+  display: flex;
+ margin-left: -25px;
+}
+
+.remove-btn {
+  background: none;
+  border: none;
+  color: red;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.remove-btn:hover {
+  color: darkred;
+}
+
+.dashboard-container {
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+  background-color: #f4f6f9;  /* Light background for the entire dashboard */
+}
+
+.sidebar {
+  width: 300px;
+  background: #ffffff;  /* White background for the sidebar */
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+.sidebar h2, .sidebar h3 {
+  margin-bottom: 20px;
+  font-weight: bold;
+  color: #2c3e50;  /* Dark color for the headings */
+}
+
+.input-field {
+  width: 85%;
+  margin-bottom: 15px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 14px;
+  background-color: #fafafa;  /* Lighter background for inputs */
+}
+
+.input-field:focus {
+  border-color: #52a631;  /* Green focus color */
+  background-color: #ffffff;  /* White background when focused */
+}
+
+.button {
+  width: 60%;
+  margin-left: 50px;
+  background-color: #52a631;  /* Fresh green for buttons */
+  color: #fff;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: #45a129;  /* Darker green for hover */
+}
+
+.product-list {
+  flex-grow: 1;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.product-card {
+  background: #ffffff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  padding: 20px;
+  transition: transform 0.2s ease-in-out;
+  background-color: #f9f9f9;  /* Subtle background for product cards */
+}
+
+.product-card:hover {
+  transform: translateY(-10px);
+  background-color: #eef7ef;  /* Light green on hover */
+}
+
+.product-card img {
+  width: 100%;
+  max-height: 150px;
+  object-fit: contain;
+  margin-bottom: 15px;
+}
+
+.product-card h4 {
+  font-size: 18px;
+  margin: 10px 0;
+  color: #333;  /* Dark color for product name */
+}
+
+.product-card p {
+  font-size: 16px;
+  color: #777;  /* Subtle color for product details */
+}
+
+.cart-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ffffff;  /* White background for cart items */
+  padding: 12px 15px;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background-color: #f3f3f3;  /* Soft gray background for cart items */
+}
+
+.cart-item span {
+  font-size: 16px;
+  color: #2c3e50;  /* Dark color for item names */
+}
+
+.remove-btn {
+  background: none;
+  border: none;
+  color: #e74c3c;  /* Red color for remove button */
+  font-size: 18px;
+  cursor: pointer;
+  padding: 5px 10px;
+  border-radius: 4px;
+  transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+.remove-btn:hover {
+  color: #c0392b;  /* Dark red for hover effect */
+  background-color: #f7f7f7;  /* Light gray background when hovered */
+}
+
+.empty-cart-message {
+  text-align: center;
+  color: #888;
+  font-size: 16px;
+}
+
+.sidebar .cart-item {
+  background-color: #f9f9f9;  /* Light background for cart item in sidebar */
+}
+
+.sidebar .cart-item .remove-btn {
+  background-color: transparent;
+  font-size: 18px;
+}
+
+.sidebar .cart-item:hover {
+  background-color: #eef7ef;  /* Light green on hover */
+}
+
+  
