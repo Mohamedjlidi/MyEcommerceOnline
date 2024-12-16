@@ -1,9 +1,22 @@
-import React from 'react';
-import { Link } from 'react-router-dom'; // Importer Link de react-router-dom
-import { FaGithub } from 'react-icons/fa'; // Importer l'icône GitHub depuis react-icons
+import React, { useState } from 'react';
+import { Link, useNavigate } from 'react-router-dom';
+import { FaGithub } from 'react-icons/fa';
 import './Navbar.css';
 
-const Navbar = () => {
+const Navbar = ({ onLogout }) => {
+  const navigate = useNavigate();
+  const [isOpen, setIsOpen] = useState(false); // État pour gérer l'ouverture du menu
+
+  const handleLogout = () => {
+    localStorage.removeItem('authToken');
+    onLogout();
+    navigate('/'); // Redirige vers la page d'authentification après la déconnexion
+  };
+
+  const toggleMenu = () => {
+    setIsOpen(!isOpen); // Bascule l'état du menu
+  };
+
   return (
     <nav className="navbar">
       <div className="navbar-logo">
@@ -15,19 +28,28 @@ const Navbar = () => {
         <div className="logo">MyEcommerce</div>
       </div>
 
-      <ul className="nav-links">
-        <li><Link to="/About">Accueil</Link></li> {/* Lien vers la page d'accueil */}
-        <li><Link to="/products">Produits</Link></li> {/* Lien vers la page des produits */}
-        <li><Link to="/Apropos">À Propos</Link></li> {/* Lien vers la page À propos */}
-        <li><Link to="/Services">Services</Link></li> {/* Lien vers la page services */}
-        <li><Link to="/Contact">Contact</Link></li> {/* Lien vers la page Contact */}
-        {/* Lien GitHub */}
+      <ul className={`nav-links ${isOpen ? 'open' : ''}`}>
+        <li><Link to="/about">Accueil</Link></li>
+        <li><Link to="/products">Produits</Link></li>
+        <li><Link to="/apropos">Propos</Link></li>
+        <li><Link to="/services">Services</Link></li>
+        <li><Link to="/contact">Contact</Link></li>
         <li>
-          <a href="https://github.com/MoJlidi5680/MyEcommerce" target="_blank" rel="noopener noreferrer">
-            <FaGithub size={30} /> {/* Affichage de l'icône GitHub */}
+          <Link to="/" onClick={handleLogout} className="logout-link">Déconnexion</Link>
+        </li>
+        <li>
+          <a href="https://github.com/MoJlidi5680/my-site-ecommerce" target="_blank" rel="noopener noreferrer">
+            <FaGithub size={30} />
           </a>
         </li>
       </ul>
+
+      {/* Menu hamburger pour mobile */}
+      <div className={`hamburger ${isOpen ? 'open' : ''}`} onClick={toggleMenu}>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
     </nav>
   );
 };

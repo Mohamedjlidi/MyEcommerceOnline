@@ -1,0 +1,111 @@
+/* Authentification - Conteneur principal */
+.auth-page-container {
+    max-width: 600px;
+    margin: 80px auto;
+    padding: 30px;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+/* Titre principal */
+.auth-page-container h1 {
+    font-size: 32px;
+    color: #2c3e50;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+}
+
+/* Groupes de formulaires */
+.auth-form-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+/* Étiquettes des champs */
+.auth-form-group label {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 8px;
+    display: block;
+    font-weight: bold;
+}
+
+/* Champs de formulaire */
+.auth-form-group input {
+    width: 95%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    font-size: 16px;
+    background: #f9f9f9;
+    transition: all 0.3s ease-in-out;
+}
+
+.auth-form-group input:focus {
+    border-color: #ff7e5f;
+    background: #fff;
+    box-shadow: 0 0 10px rgba(255, 126, 95, 0.2);
+}
+
+/* Bouton - Connexion et Inscription */
+button {
+    background-color: #ff7e5f;
+    color: white;
+    padding: 12px 25px;
+    font-size: 16px;
+    border: none;
+    border-radius: 30px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 5px 10px rgba(255, 126, 95, 0.3);
+}
+
+button:hover {
+    background-color: #e05645;
+    transform: scale(1.05);
+}
+
+/* Section de basculement entre Login et Register (aligné à droite) */
+.auth-switch {
+    display: flex;
+    justify-content: flex-end;  /* Aligne les boutons à droite */
+    margin-top: 20px;
+}
+
+.auth-switch button {
+    background-color: #ff7e5f;
+    border: 1px solid #ccc;
+    padding: 10px 20px;
+    margin: 0 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Bouton actif */
+.auth-switch button.active {
+    background-color: #ff7e5f;
+    color: white;
+}
+
+.auth-switch button:hover {
+    background-color: #e05645;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .auth-page-container {
+        padding: 20px;
+    }
+
+    .auth-page-container h1 {
+        font-size: 28px;
+    }
+
+    button {
+        font-size: 14px;
+    }
+}

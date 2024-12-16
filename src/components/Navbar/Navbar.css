@@ -1,5 +1,3 @@
-/* Navbar.css */
-
 /* Style général de la barre de navigation */
 .navbar {
   display: flex;
@@ -14,7 +12,7 @@
 }
 
 .navbar:hover {
-  background-color: #34495E; /* Changement de couleur au survol */
+  background-color: #34495E;
   box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
 }
 
@@ -32,7 +30,7 @@
 }
 
 .navbar-logo:hover img {
-  transform: scale(1.1); /* Effet d'agrandissement au survol du logo */
+  transform: scale(1.1);
 }
 
 .logo {
@@ -45,7 +43,7 @@
 }
 
 .navbar:hover .logo {
-  color: #E74C3C; /* Changement de couleur du logo au survol */
+  color: #E74C3C;
 }
 
 /* Liens de navigation */
@@ -71,7 +69,7 @@
 
 .nav-links a:hover {
   color: #E74C3C;
-  transform: scale(1.1); /* Effet de zoom sur les liens */
+  transform: scale(1.1);
 }
 
 .nav-links li::after {
@@ -86,10 +84,10 @@
 }
 
 .nav-links li:hover::after {
-  width: 100%; /* Soulignement au survol */
+  width: 100%;
 }
 
-/* Bouton menu hamburger sur mobile */
+/* Menu hamburger pour mobile */
 .hamburger {
   display: none;
   flex-direction: column;
@@ -116,7 +114,7 @@
     top: 80px;
     left: 0;
     right: 0;
-    background-color: #1A1A1A;
+    background-color: #403c3c;
     flex-direction: column;
     gap: 20px;
     align-items: center;
@@ -124,8 +122,8 @@
     box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
   }
 
-  .navbar.open .nav-links {
-    display: flex; /* Affiche le menu quand l'état 'open' est activé */
+  .nav-links.open {
+    display: flex; /* Affiche le menu lorsque l'état 'open' est activé */
   }
 
   .nav-links a {
@@ -137,14 +135,14 @@
   }
 
   .hamburger.open div:nth-child(1) {
-    transform: rotate(45deg) translateY(8px); /* Rotation du premier élément */
+    transform: rotate(45deg) translateY(8px);
   }
 
   .hamburger.open div:nth-child(2) {
-    opacity: 0; /* Masque le deuxième élément */
+    opacity: 0;
   }
 
   .hamburger.open div:nth-child(3) {
-    transform: rotate(-45deg) translateY(-8px); /* Rotation du troisième élément */
+    transform: rotate(-45deg) translateY(-8px);
   }
 }
